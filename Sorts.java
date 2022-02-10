@@ -1,3 +1,10 @@
+/* HDT3 GRUPO1 
+ * Sort 
+ * JUAN LORTHIOIS
+ * CINDY GUALIM
+ * CARLOS ESTRADA
+ */
+
 import java.util.Vector;
 import java.util.Arrays;
 public class Sorts {
@@ -29,10 +36,10 @@ public class Sorts {
 	
 	
 	
-	// MergeSort
-	// Codigo recuperado del libro de texto del curso Java Structures, de Duane A. Bailey, en la pagina 127
+		// MergeSort
+		// Codigo recuperado del libro de texto del curso Java Structures, de Duane A. Bailey, en la pagina 127
 	
-	private static void merge(int data[], int temp[], int low, int middle, int high) {
+		private static void merge(int data[], int temp[], int low, int middle, int high) {
 		
 		int ri = low; 
 		int ti = low;
@@ -152,7 +159,7 @@ public class Sorts {
 	
 	
 	// radixSort
-	// Codigo para raddix recuperado de la página web: https://www.geeksforgeeks.org/radix-sort/
+	// Codigo para raddix recuperado de la pï¿½gina web: https://www.geeksforgeeks.org/radix-sort/
 	
 	// A utility function to get maximum value in arr[]
     static int getMax(int arr[], int n)

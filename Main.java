@@ -1,4 +1,5 @@
 /* HDT3 GRUPO1 
+ * Main del programa
  * JUAN LORTHIOIS
  * CINDY GUALIM
  * CARLOS ESTRADA

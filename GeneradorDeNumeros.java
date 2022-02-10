@@ -1,3 +1,10 @@
+/* HDT3 GRUPO1 
+ * Implementación de la interfaz
+ * JUAN LORTHIOIS
+ * CINDY GUALIM
+ * CARLOS ESTRADA
+ */
+
 import java.util.Arrays;
 import java.util.Random;
 import java.io.BufferedReader;
