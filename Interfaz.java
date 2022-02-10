@@ -1,5 +1,8 @@
-public interface Interfaz {
-    
-    public int GenerarNum(int num);
 
+public interface Interfaz {
+
+	public int GenerarNum();
+	
+	public void GenerarLista();
+	
 }
