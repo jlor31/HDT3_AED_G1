@@ -47,7 +47,7 @@ public class GeneradorDeNumeros implements Interfaz{
 	public void GuardarNumeros() {
 		
 		try {
-			BufferedWriter escritor = new BufferedWriter(new FileWriter("enteros.txt"));
+			BufferedWriter escritor = new BufferedWriter(new FileWriter("C:\\Dev\\HDT3_AED_G1\\HDT3_AED_G1\\enteros.txt"));
 			
 			for (int n : ArrayEnteros) {
 				

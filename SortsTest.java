@@ -1,54 +1,60 @@
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.Arrays;
+
 import org.junit.jupiter.api.Test;
 
 class SortsTest {
 
+	
+	
 	@Test
-	void testGnomeSort() {
-		int[] arr = new int [0];
-		int obteniendo = Sorts.gnomeSort([0], 15);
-		equals(0<15);
+	void testGnome() {
+		
+		Sorts sort = new Sorts();
+		int desordenados[] = {6,2,21,8,0,17,3,4,1,2};
+		int ordenados[] = {0,1,2,2,3,4,6,8,17,21};
+		
+		sort.gnomeSort(desordenados, 10);
+		
+		assert Arrays.equals(desordenados, ordenados);
 		
 	}
-  
-	@Test
-	void testMergeSort() {
-		int[] arr = new int [0];
+	
+	void testquickSort() {
 		
-		int obteniendo = Sorts.mergeSort([0],15);
-	}
-
-	@Test
-	void testSwap() {
-		int[] arr = new int [0];
+		Sorts sort = new Sorts();
+		int desordenados[] = {6,2,21,8,0,17,3,4,1,2};
+		int ordenados[] = {0,1,2,2,3,4,6,8,17,21};
 		
-		int obteniendo = Sorts.swap([0], 0,15); 
+		sort.quickSort(desordenados,0, 9);
+		
+		assert Arrays.equals(desordenados, ordenados);
+		
+	}
+	
+	void testMerge() {
+		
+		Sorts sort = new Sorts();
+		int desordenados[] = {6,2,21,8,0,17,3,4,1,2};
+		int ordenados[] = {0,1,2,2,3,4,6,8,17,21};
+		
+		sort.mergeSort(desordenados, 10);
+		
+		assert Arrays.equals(desordenados, ordenados);
+		
 	}
 
-	@Test
-	void testPartition() {
-		int obteniendo = Sorts.partition([0], 0,15);   
+	
+	void testRadix() {
+		
+		Sorts sort = new Sorts();
+		int desordenados[] = {6,2,21,8,0,17,3,4,1,2};
+		int ordenados[] = {0,1,2,2,3,4,6,8,17,21};
+		
+		sort.radixSort(desordenados, 10);
+		
+		assert Arrays.equals(desordenados, ordenados);
+		
 	}
-
-	@Test
-	void testQuickSort() {
-		int obteniendo =Sorts.quickSort([0], 0,15);
-	}
-
-	@Test
-	void testGetMax() {
-		int obteniendo =Sorts.getMax([0], 0,15); 
-	}
-
-	@Test
-	void testCountSort() {
-		int obteniendo = Sorts.countSort([0],0,15);
-	}
-
-	@Test
-	void testRadixSort() {
-		int obteniendo = Sorts.radixSort([0],0,15);
-	}
-
 }
